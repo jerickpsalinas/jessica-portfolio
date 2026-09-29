@@ -5,29 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Jessica Pante Salinas | Funnel Builder & Shopify Expert</title>
 <meta name="description" content="Jessica Pante Salinas - Freelance Funnel Builder & Shopify E-commerce Specialist based in the Philippines." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#home" class="logo">Jessica P. Salinas</a>
-      <nav class="nav">
+      <a href="#home" class="logo">Jessica<span>.</span></a>
+      <nav class="nav" id="nav">
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#work">Funnel Samples</a>
         <a href="#contact">Contact</a>
       </nav>
+      <a href="#contact" class="btn btn-sm nav-cta">Hire Me</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <main>
     <section id="home" class="hero">
+      <div class="hero-glow"></div>
       <div class="container hero-inner">
         <img src="assets/profile.webp" alt="Jessica Pante Salinas" class="avatar" />
         <p class="eyebrow">Available for freelance projects</p>
         <h1>Hi, I'm Jessica Pante Salinas</h1>
         <p class="subtitle">Funnel Builder &amp; Shopify E-commerce Specialist</p>
-        <p class="location">📍 Philippines &nbsp;|&nbsp; 27 years old</p>
+        <p class="location">📍 Philippines &nbsp;·&nbsp; 27 years old</p>
         <p class="hero-desc">
           I help coaches, course creators, and online store owners turn clicks into
           customers — building high-converting sales funnels and Shopify stores that
@@ -46,86 +55,149 @@
           <a href="#work" class="btn btn-outline">View Funnel Samples</a>
         </div>
       </div>
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C360,100 1080,0 1440,50 L1440,100 L0,100 Z"></path></svg>
+      </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About Me</h2>
-        <div class="about-text">
-          <p>
-            I'm a Funnel Builder specializing in Funnelish and Shopify e-commerce. I can build
-            and customize sales funnels, advertorials, landing pages, product pages, checkout
-            pages, order bumps, upsells, downsells, and thank-you pages. I'm also comfortable
-            adapting existing funnel templates, recreating competitor funnels, and making sure
-            pages are clean, responsive, and functional on both desktop and mobile.
-          </p>
-          <p>
-            I'm detail-oriented and focused on creating a smooth customer journey from the
-            landing page through checkout. I can also assist with Shopify store setup, product
-            pages, apps and integrations, funnel testing, troubleshooting, and revisions based
-            on client requirements. I'm comfortable following SOPs and learning new tools and
-            workflows to help e-commerce businesses launch and improve their funnels.
-          </p>
-          <p>
-            I'm looking for opportunities to work with e-commerce brands, agencies, and business
-            owners who need a reliable Funnel Builder for ongoing funnel development and
-            Shopify-related tasks. My goal is to become a dependable part of the team and
-            consistently deliver clean, accurate, and conversion-focused work.
-          </p>
+    <section id="about" class="section reveal">
+      <div class="container about-grid">
+        <div>
+          <p class="section-eyebrow">Get To Know Me</p>
+          <h2>About Me</h2>
+          <div class="about-text">
+            <p>
+              I'm a Funnel Builder specializing in Funnelish and Shopify e-commerce. I can build
+              and customize sales funnels, advertorials, landing pages, product pages, checkout
+              pages, order bumps, upsells, downsells, and thank-you pages. I'm also comfortable
+              adapting existing funnel templates, recreating competitor funnels, and making sure
+              pages are clean, responsive, and functional on both desktop and mobile.
+            </p>
+            <p>
+              I'm detail-oriented and focused on creating a smooth customer journey from the
+              landing page through checkout. I can also assist with Shopify store setup, product
+              pages, apps and integrations, funnel testing, troubleshooting, and revisions based
+              on client requirements. I'm comfortable following SOPs and learning new tools and
+              workflows to help e-commerce businesses launch and improve their funnels.
+            </p>
+            <p>
+              I'm looking for opportunities to work with e-commerce brands, agencies, and business
+              owners who need a reliable Funnel Builder for ongoing funnel development and
+              Shopify-related tasks. My goal is to become a dependable part of the team and
+              consistently deliver clean, accurate, and conversion-focused work.
+            </p>
+          </div>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <span class="highlight-icon">⚡</span>
+            <h4>Fast &amp; Reliable</h4>
+            <p>Clear communication and on-time delivery, every time.</p>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">🎯</span>
+            <h4>Conversion-Focused</h4>
+            <p>Every page is built with the customer journey in mind.</p>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">🛠️</span>
+            <h4>SOP-Driven</h4>
+            <p>Follows your process, or helps build one from scratch.</p>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">📱</span>
+            <h4>Mobile-Ready</h4>
+            <p>Pages tested and polished on desktop and mobile.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="services" class="section alt">
+    <section id="services" class="section alt reveal">
       <div class="container">
+        <p class="section-eyebrow">What I Do</p>
         <h2>Services</h2>
         <div class="cards">
           <div class="card">
+            <span class="card-icon">🧩</span>
             <h3>Funnel Building</h3>
             <p>Sales funnels, advertorials, landing pages, order bumps, upsells, downsells, and thank-you pages built to convert using Funnelish, ClickFunnels, GoHighLevel, and more.</p>
           </div>
           <div class="card">
+            <span class="card-icon">🛍️</span>
             <h3>Shopify Store Setup</h3>
-            <p>Full Shopify store setup, theme customization, product listings, and store optimization for e-commerce brands.</p>
+            <p>Full Shopify store setup, theme customization, product listings, apps &amp; integrations, and store optimization for e-commerce brands.</p>
           </div>
           <div class="card">
+            <span class="card-icon">📈</span>
             <h3>Conversion Optimization</h3>
             <p>Improving page flow, copy placement, and layout to boost conversion rates and reduce drop-off.</p>
+          </div>
+          <div class="card">
+            <span class="card-icon">🎨</span>
+            <h3>Template &amp; Competitor Recreation</h3>
+            <p>Adapting existing funnel templates or recreating competitor funnels, cleaned up and rebuilt to match your brand.</p>
+          </div>
+          <div class="card">
+            <span class="card-icon">🧪</span>
+            <h3>Funnel Testing &amp; QA</h3>
+            <p>End-to-end testing across desktop and mobile, catching bugs before they cost you sales.</p>
+          </div>
+          <div class="card">
+            <span class="card-icon">🔧</span>
+            <h3>Troubleshooting &amp; Revisions</h3>
+            <p>Ongoing edits, fixes, and improvements based on your feedback and business needs.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="work" class="section">
+    <section id="work" class="section reveal">
       <div class="container">
+        <p class="section-eyebrow">Portfolio</p>
         <h2>Funnel Samples</h2>
         <p class="section-note">A showcase of funnel and Shopify store projects — samples coming soon.</p>
         <div id="funnel-gallery" class="gallery">
           <!-- Sample project cards will be added here later -->
           <div class="gallery-placeholder">
-            <p>🚧 Funnel samples will be uploaded soon. Check back later!</p>
+            <span class="highlight-icon">🚧</span>
+            <p>Funnel samples will be uploaded soon. Check back later!</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section alt">
+    <section id="contact" class="section alt reveal">
       <div class="container contact-inner">
+        <p class="section-eyebrow">Let's Connect</p>
         <h2>Get In Touch</h2>
-        <p>Interested in working together? Reach out through any of the channels below.</p>
-        <ul class="contact-list">
-          <li>📧 <a href="mailto:jessicapantesalinas014@gmail.com">jessicapantesalinas014@gmail.com</a></li>
-          <li>📱 <a href="tel:+639919211504">+63 991 921 1504</a></li>
-          <li>📍 Philippines</li>
-        </ul>
+        <p class="contact-sub">Interested in working together? Reach out through any of the channels below — I usually reply within a day.</p>
+        <div class="contact-cards">
+          <a href="mailto:jessicapantesalinas014@gmail.com" class="contact-card">
+            <span class="contact-icon">📧</span>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">jessicapantesalinas014@gmail.com</span>
+          </a>
+          <a href="tel:+639919211504" class="contact-card">
+            <span class="contact-icon">📱</span>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+63 991 921 1504</span>
+          </a>
+          <div class="contact-card">
+            <span class="contact-icon">📍</span>
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Philippines</span>
+          </div>
+        </div>
         <a href="mailto:jessicapantesalinas014@gmail.com" class="btn">Email Me</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="container footer-inner">
       <p>&copy; <span id="year"></span> Jessica Pante Salinas. All rights reserved.</p>
+      <a href="#home" class="back-to-top">Back to top ↑</a>
     </div>
   </footer>
 
