@@ -207,6 +207,14 @@ a {
   margin-bottom: 24px;
 }
 
+.about-text {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--text-light);
+}
+
 /* Cards */
 .cards {
   display: grid;
