@@ -1,10 +1,12 @@
 :root {
-  --primary: #2563eb;
-  --primary-dark: #1d4ed8;
-  --text: #1f2937;
-  --text-light: #6b7280;
+  --primary: #22396f;
+  --primary-dark: #0d1c42;
+  --navy: #010736;
+  --cream: #fcf1d0;
+  --text: #010736;
+  --text-light: #4b5573;
   --bg: #ffffff;
-  --bg-alt: #f9fafb;
+  --bg-alt: #fcf1d0;
   --border: #e5e7eb;
   --radius: 12px;
 }
@@ -29,7 +31,7 @@ body {
 }
 
 a {
-  color: var(--primary);
+  color: var(--primary-dark);
   text-decoration: none;
 }
 
@@ -37,9 +39,9 @@ a {
 .site-header {
   position: sticky;
   top: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(1, 7, 54, 0.95);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--navy);
   z-index: 100;
 }
 
@@ -53,7 +55,7 @@ a {
 .logo {
   font-weight: 700;
   font-size: 1.1rem;
-  color: var(--text);
+  color: var(--cream);
 }
 
 .nav {
@@ -62,20 +64,22 @@ a {
 }
 
 .nav a {
-  color: var(--text-light);
+  color: var(--cream);
+  opacity: 0.8;
   font-weight: 500;
   font-size: 0.95rem;
 }
 
 .nav a:hover {
-  color: var(--primary);
+  opacity: 1;
 }
 
 /* Hero */
 .hero {
   padding: 96px 0 72px;
   text-align: center;
-  background: linear-gradient(180deg, var(--bg-alt), var(--bg));
+  background: linear-gradient(180deg, var(--navy), var(--primary-dark));
+  color: var(--cream);
 }
 
 .hero-inner {
@@ -89,7 +93,7 @@ a {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 3px solid var(--primary);
+  border: 3px solid var(--cream);
   margin-bottom: 16px;
   object-fit: cover;
 }
@@ -97,16 +101,19 @@ a {
 .hero h1 {
   font-size: 2.2rem;
   font-weight: 800;
+  color: var(--cream);
 }
 
 .subtitle {
   font-size: 1.15rem;
-  color: var(--primary);
+  color: var(--cream);
   font-weight: 600;
+  opacity: 0.9;
 }
 
 .location {
-  color: var(--text-light);
+  color: var(--cream);
+  opacity: 0.75;
   margin-bottom: 12px;
 }
 
@@ -114,15 +121,15 @@ a {
   display: inline-block;
   margin-top: 16px;
   padding: 12px 28px;
-  background: var(--primary);
-  color: #fff;
+  background: var(--cream);
+  color: var(--navy);
   border-radius: var(--radius);
   font-weight: 600;
-  transition: background 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .btn:hover {
-  background: var(--primary-dark);
+  opacity: 0.85;
 }
 
 /* Sections */
